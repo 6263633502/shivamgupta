@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<title>Shivamgupta</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.wrapper {
+  height: 10vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.typing-demo {
+  width: 25ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+.button5 {border-radius: 40%;}
+.button5 {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+.footer {
+position: sticy;
+   height:50px
+   left: 0;
+   bottom: 10;
+   width: 100%;
+   background-color: #808080;
+   color: white;
+   text-align: center;
+}
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 45%; background-color: #04AA6D;}
+.css {width: 40%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 35%; background-color: #808080;}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black"style="background-color:#808080.; color: #ffffff;">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black"style="background-color:#808080.; color: #ffffff;">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#SKILL" class="w3-bar-item w3-button w3-padding-large w3-hover-black"style="background-color:#808080.; color: #ffffff;">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>SKILL</p>
+  </a>
+  <a href="#quality" class="w3-bar-item w3-button w3-padding-large w3-hover-black"style="background-color:#808080.; color: #ffffff;">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>QUALITY</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black"style="background-color:#808080.; color: #ffffff;">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+   
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#SKILL" class="w3-bar-item w3-button" style="width:25% !important">SKILL</a>
+	  <a href="#quality" class="w3-bar-item w3-button" style="width:25% !important">QUALITY</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 >Hello,my name</span> </h1>
+
+	<h1 class="w3-jumbo"> <span class="w3-hide-small">SHIVAM GUPTA.</span></h1>
+	<div class="wrapper">
+    <div class="typing-demo">
+      Software & Web developer.
+    </div>
+</div>
+   <a href="#contact" class="button5 button5" style="background-color:#808080; color: #ffffff;">Hire Me</a>
+   
+   <a href="file:///C:/Users/shivam%20gupta/Downloads/668126.pdf" class="button5 button5" style="background-color:#808080; color: #ffffff;">Resume</a>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">My Name</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am shivam gupta. I am from madhyapradesh , currently  I pursuing my b.tech from shri vaishnav institute of information and technology. I scored 8.9 SGPA in my last semester(6th sem) .I am hardworker and always think about my skills and try to improve skills and i have capabilities to learn new things because i am a good learner too. As a freasher i always improve my skills and personalities that can make me a good person. In my last project i was a Leader of that project and it was a Web page that is developed by django ,html ,CSS and for backend part i used MySql as a database. Currently I am developing a project with the help of Blockchain . I have also worked with ai and i developed a Chatbot with the help of IBM cloud.I have interest in Photography too. and i am a mobile photographer.
+    </p>
+	
+
+   
+     
+	 <!-- Skill Start -->
+    <div class="container-fluid py-5" id="SKILL">
+	<h2 class="w3-text-light-grey">My Skills</h2>
+        <div class="container">
+           
+           
+            
+                            <h6>HTML</h6>
+                            <h6 class="skills html">90%</h6>
+                      
+                    
+                            <h6>CSS</h6>
+                            <h6 class="skills css">80%</h6>
+                       
+                   
+                            <h6>CORE JAVA</h6>
+                            <h6 class="skills html">90%</h6>
+                        
+              
+                            <h6>C & C++</h6>
+                            <h6 class="skills css">80%</h6>
+                        
+                            <h6>Django</h6>
+                            <h6 class="skills php">75%</h6>
+                        
+                            <h6>Mysql</h6>
+                            <h6 class="skills php">75%</h6>
+                        
+                </div>
+            </div>
+       
+    <!-- Skill End -->
+	  <div class="container-fluid py-5" id="quality">
+	  
+	  <h2 class="w3-text-light-grey">Education </h2>
+       
+                    <h3>My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Bachelor of Technology and Science</h5>
+                            <p class="mb-2"><strong>Shri Vaishnav vidypeeth Vishwavidyalaya</strong> | <small>2018- 2022</small></p>
+                            <p>Computer Science Engineering </p>
+							<p> CGPA : 7.54</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Higher Secondary </h5>
+                            <p class="mb-2"><strong>M P Board of secondary education</strong> | <small>2016-2017</small></p>
+                            <p>Science</p>
+							<p>Percentage : 78.2%</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">High School</h5>
+                            <p class="mb-2"><strong>M P Board of secondary education</strong> | <small>2014 - 2015</small></p>
+                            <p>Science</p>
+							<p>Percentage : 88.7%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        
+   
+    
+   
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Indore, MP</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91-6263633502</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: shivam.saraf729@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+  
+    <!-- Footer -->
+  
+    
+   
+	 <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+	<!-- END PAGE CONTENT -->
+
+
+    <!-- Footer End -->
+  
+  </div>
+  <div class="footer">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/profile.php?id=100016421434934"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/shivam-gupta-44a692170/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/estupendo_shivam/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Shivam Gupta</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#">Shivam Gupta</a>
+            </p>
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
